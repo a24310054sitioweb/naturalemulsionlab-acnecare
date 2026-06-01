@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6fbf7;
+color:#333;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo-container img{
+height:80px;
+width:auto;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+header{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:80px 10%;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.precio{
+font-size:1.5rem;
+font-weight:700;
+color:#6c3eb7;
+}
+
+.hero-image img{
+width:420px;
+max-width:100%;
+}
+
+.btn{
+background:#6c3eb7;
+color:white;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+.purchase-box{
+background:white;
+max-width:700px;
+margin:auto;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+padding:16px 35px;
+background:#25D366;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+}
+
+footer{
+background:#2e7d32;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+.logo-container img{
+height:60px;
+}
+
+.hero-text h1{
+font-size:2.2rem;
+}
+
+}
